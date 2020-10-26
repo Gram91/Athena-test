@@ -1,0 +1,138 @@
+{
+  "bills": [
+    {
+      "salutation": "mrs",
+      "name": "Gowtham",
+      "gender": "female",
+      "dob": "2018-01-15T18:30:00.000Z",
+      "ageType": "Child",
+      "age": {
+        "label": "2",
+        "value": 2
+      },
+      "appointmentDate": "2020-10-29T18:30:00.000Z",
+      "phoneNumber": "8148637657",
+      "addressLine1": "test",
+      "addressLine2": "test",
+      "city": "test",
+      "state": "test",
+      "pin": "test",
+      "country": "United States",
+      "billingData": {
+        "sno": 1,
+        "scanName": "CT BRAIN",
+        "scanAmount": 200,
+        "discount": 10,
+        "totalAmount": 0,
+        "modality": "CT",
+        "status": "Fully Billed"
+      },
+      "id": 1,
+      "previousTransactions": [
+        {
+          "id": 1,
+          "amount": 15,
+          "paymentMode": "cash",
+          "paymentDate": "2020-10-26T19:05:16.945Z"
+        },
+        {
+          "id": 2,
+          "amount": 60,
+          "paymentMode": "cash",
+          "paymentDate": "2020-10-26T19:05:24.451Z"
+        },
+        {
+          "id": 3,
+          "amount": 115,
+          "paymentMode": "cash",
+          "paymentDate": "2020-10-26T19:05:34.599Z"
+        }
+      ]
+    },
+    {
+      "salutation": "ms",
+      "name": "Ravi",
+      "gender": "female",
+      "dob": "2018-02-12T18:30:00.000Z",
+      "ageType": "Child",
+      "age": {
+        "label": "2",
+        "value": 2
+      },
+      "appointmentDate": "2020-10-29T18:30:00.000Z",
+      "phoneNumber": "8148637657",
+      "addressLine1": "test",
+      "addressLine2": "tse",
+      "city": "test",
+      "state": "test",
+      "pin": "test",
+      "country": "United States",
+      "billingData": {
+        "sno": 1,
+        "scanName": "MRI BRAIN",
+        "scanAmount": 170,
+        "discount": 50,
+        "totalAmount": 120,
+        "modality": "MRI",
+        "status": "Not Yet Billed"
+      },
+      "id": 2
+    },
+    {
+      "salutation": "mrs",
+      "name": "Rami",
+      "gender": "female",
+      "dob": "2018-05-21T18:30:00.000Z",
+      "ageType": "Child",
+      "age": {
+        "label": "2",
+        "value": 2
+      },
+      "appointmentDate": "2020-11-03T18:30:00.000Z",
+      "phoneNumber": "8148637657",
+      "addressLine1": "test",
+      "addressLine2": "test",
+      "city": "test",
+      "state": "test",
+      "pin": "test",
+      "country": "United States",
+      "billingData": {
+        "sno": 1,
+        "scanName": "CT BRAIN",
+        "scanAmount": 200,
+        "discount": 11,
+        "totalAmount": 0,
+        "modality": "CT",
+        "status": "Fully Billed"
+      },
+      "id": 3,
+      "previousTransactions": [
+        {
+          "id": 1,
+          "amount": 50,
+          "paymentDate": "2020-10-26T19:12:27.822Z"
+        },
+        {
+          "id": 2,
+          "amount": 30,
+          "paymentDate": "2020-10-26T19:38:28.738Z"
+        },
+        {
+          "id": 3,
+          "amount": 109,
+          "paymentDate": "2020-10-26T19:40:38.909Z"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
