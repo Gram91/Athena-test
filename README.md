@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Athena test implementation
+
+To start project:
+
+go to medical-billing folder and enter ng serve
+
+to start backend server:
+
+D:\Angular\medical-billing\src>json-server --watch db.json
+
+the above server needs to be up and running in order to make API call
+
+if needed, clear db.json file under the above path t start afresh for node_modules: go the medical-billing folder and enter npm for getting the dependencies
