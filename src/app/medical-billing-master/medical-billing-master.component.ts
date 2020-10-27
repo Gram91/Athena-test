@@ -20,6 +20,7 @@ billErrors:any;
 patientDetailErr:any
 medicalErrors:any;
 validationFailed=false;
+startloader = false;
   ngOnInit() {
     
   }
@@ -27,6 +28,7 @@ validationFailed=false;
   saveMedicalData(data)
   {
    this.saveData = true;
+   this.startloader = true;
    
   }
 
@@ -35,6 +37,7 @@ validationFailed=false;
      this.requestData = data;
      this.saveBillData=true;
      this.medicalErrors ="";
+     
   }
   savecurrentBillData(data)
   {
@@ -42,6 +45,7 @@ validationFailed=false;
     if(this.medicalErrors!==undefined && this.medicalErrors!==null && this.medicalErrors!=="" )
     {
       this.validationFailed = true;
+      this.startloader = false;
     if(!this.medicalErrors.includes("</ul>"))
     {
      this.medicalErrors+="</ul>";
@@ -52,6 +56,7 @@ validationFailed=false;
     //_.merge(this.requestData,{"billingData":data});
     //$.extend(this.requestData,{c:data});
     var billresponse = this.appService.getAll();
+    this.startloader = false;
     // Object.assign({id:1},this.requestData);
     // Object.assign(this.requestData,{"billingData":data});
     for(let i=0;i<data.length;i++)
@@ -90,6 +95,7 @@ validationFailed=false;
       this.medicalErrors+="</ul>";
      }
      this.validationFailed = true;
+     this.startloader = false;
   }
 
   patientDetailErrors(data)

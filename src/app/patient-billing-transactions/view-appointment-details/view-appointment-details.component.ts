@@ -32,8 +32,8 @@ bills :Bill []=[]
     console.log(val);
     this.appointmentData  = val;
     this.tempData = val;
-    
   })
+  
   }
 
   searchData(data)
@@ -103,6 +103,10 @@ if(this.searchPattern!==undefined && this.searchPattern!==null && this.searchPat
     this.selectedId = data.id;
     this.router.navigate(["/billing/patientBillingTransactions/transactions"],{ queryParams: { id: this.selectedId} })
     console.log("clicked");
+  }
+  refreshRecords(data)
+  {
+    this.ngOnInit();
   }
 
 }

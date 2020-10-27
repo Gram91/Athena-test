@@ -155,5 +155,9 @@ export class BillingDetailsComponent implements OnInit,OnChanges {
   {
     this.scanAmount = this.billResult[0].scanAmount;
   }
+  closeAlert(data)
+  {
+    this.notifyUser = false;
+  }
 
 }

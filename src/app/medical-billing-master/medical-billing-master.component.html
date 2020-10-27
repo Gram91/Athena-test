@@ -1,10 +1,12 @@
-
-<div class="alert alert-danger" role="alert" *ngIf="validationFailed">
+<!-- <div class="spinner-border">
+  
+</div> -->
+<!-- <div class="alert alert-danger fade" role="alert" *ngIf="validationFailed">
   <h4 class="alert-heading">Form Errors Found!</h4>
   <p>Following errors found during form Validation</p>
   <hr>
   <p [innerHTML] = "medicalErrors"></p>
-</div>
+</div> -->
 <app-patient-details [saveData] = "saveData" (emitDataToSave) = savecurrentData($event) (patientBillErrors)="patientDetailErrors($event)"></app-patient-details>
 <app-billing-details [saveBillData] = "saveBillData" (emitDataToSave) = savecurrentBillData($event) (medicalBillErrors)="billErrorList($event)"></app-billing-details>
 
@@ -13,8 +15,8 @@
   <div class="col-1"><p-button label="Add" (onClick)="saveMedicalData($event)"></p-button></div>
   <div class="col-4"></div>
 </div>
-
-<!-- <p-dialog [styleClass]="dialog" [modal]="true" [(visible)]="validationFailed" [width]="1000">
+<div id="myModal">
+<p-dialog [styleClass]="dialog" [modal]="true" [(visible)]="validationFailed" [width]="1000" styleClass="ui-page-theme-a ui-bar-inherit">
   <p-header>
         <i class="fa fa-warning" style="font-size:48px;color:red"></i>
         Validation Failed
@@ -23,6 +25,7 @@
   <p-footer>
      
   </p-footer>
-</p-dialog> -->
+</p-dialog>
+</div>
 
 
